@@ -1,0 +1,37 @@
+      <main id="main-busca">
+        <h1 class="text-main text-center">Encontre o seu primeiro job</h1>
+        <p class="text-main text-center">Empresa responsável pela inserção de jovens ao seu primeiro na área de programação.</p>
+        <form action="" id="search-form" class="row" action="/" method="GET">
+            <div class="form-group col-md-10">
+                <input type="text" class="form-control" id="job" name="job" placeholder="Digite a vaga de interesse">
+            </div>
+            <div class="col-md-2" >
+                <button type="submit" class="btn btn-primary text-center">Buscar</button>
+            </div>
+        </form> 
+      </main>
+      <main id="main-vagas" >
+        <div id="jobs-container" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {{#if search}}
+                        <h2 id="job-list-title">Busacando vagas que contem: {{search}} </h2>
+                    {{else}}
+                        <h2 id="job-list-title">Vejas as vagas em destaque</h2>
+                    {{/if}}
+                    <ul id="job-list" class="list-group">
+                        {{#each jobs}}
+                        <li class="list-group-item {{#if dataValues.new_job }} new-job {{/if}}">
+                            <img class="vagas-img" src="/imgs/empresa.png" alt="">
+                            <p>{{dataValues.company}}</p>
+                            <h2>{{dataValues.title}}</h2>
+                            <p>{{dataValues.salary}}</p>
+                            <span class="new-job-label">Nova</span>
+                            <a class="btn btn-primary" href="/jobs/view/{{dataValues.id}}">Ver mais</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </main>

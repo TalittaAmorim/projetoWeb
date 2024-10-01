@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(16, 16, 67);
+}
+.navbar-brand{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: rgb(16, 16, 67);
+}
+
+.navbar .nav-item a {
+    color: rgb(60, 60, 100);
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.nav-bar-expanf-lg .navbar-nav .nav-link{
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.navbar .nav-item .btn{
+    color: white;
+    background-color: rgb(10, 10, 84);
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.navbar .nav-item .btn:hover{
+    border:2px solid rgb(22, 22, 95);
+    background-color:  rgb(32, 32, 77);
+    animation: ease-in-out;
+}
+
+#main-busca{
+    padding: 110px;
+    height: 90%;
+    background-color: white;
+    margin-bottom: 30px;
+    border-bottom: 4px solid rgb(22, 22, 95);
+    background-image: url("../imgs/progra.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: azure;
+   
+}
+
+
+#main-busca h1{
+    padding: 30px 0 0 0;
+    font-size: 3rem;
+}
+.main-busca p{
+    font-size: 1rem;;
+    padding-bottom: 30px;
+}
+
+/* form*/
+#search-form{
+    padding: 30px 100px;
+}
+
+#search-form .col-md-10, #search-form .col-md-2{
+    padding: 0;
+}
+
+#search-form  input, #search-form  button{
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+    font-size: 18px;
+}
+
+#search-form  button{
+    background-color:  rgb(22, 22, 95);
+    border: 1px solid rgb(32, 32, 77);
+}
+
+#search-form  button:hover{
+    border:2px solid rgb(22, 22, 95);
+    background-color:  rgb(32, 32, 77);
+    animation: ease-in-out;
+}
+
+/* lista */
+
+#jobs-container{
+    padding: 0 100px;
+    padding-bottom: 50px;
+}
+
+#job-list .list-group-item{
+    margin-bottom: 8px;
+    border: 1px solid rgb(155, 137, 137);
+    padding: 20px;
+    height: 130px;
+}
+
+#job-list .list-group-item{
+    font-size: 14px;
+    border: 1px solid #CCC;
+}
+
+#job-list .list-group-item.new-job{
+    border: none;
+    background-color: #FFF7CC;
+}
+
+#job-list-title{
+    margin-bottom: 35px;
+}
+
+#main-vagas .vagas-img{
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(47, 47, 65);
+    background-color: white;
+    position: absolute;
+    left: -20px;
+    top: calc(50%- 20px);
+}
+
+.list-group-item a{
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    height: 50px;
+    line-height: 35px;
+    background-color: rgb(22, 22, 95);
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.list-group-item a:hover{
+    background-color: rgb(32, 32, 77);
+    animation: ease-in-out;
+}
+
+.new-job-label{
+    background-color: rgb(198, 167, 126);
+    color: rgb(47, 47, 65);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    right: 250px;
+    top: 40px;
+    display: none;
+}
+
+.new-job .new-job-label{
+    display: block;
+}
+
+/* add page */
+
+#add-form-container {
+    margin-top: 100px;
+}
+
+#form-box{
+    padding: 50px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.15);
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+#add-form-container h3{
+    color: rgb(22, 22, 95) ;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#add-form-container form label{
+    font-weight: bold ;
+}
+ 
+#add-form-container form input, #add-form-container form textarea{
+    border: 2px solid #CCC;
+    background-color: #F8F9FA;
+}
+
+#form-box button{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(22, 22, 95);
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-top: 20px;
+}
+
+#form-box button:hover{
+    background-color: rgb(60, 60, 100);
+}
+
+/* Detalhe da vaga */
+
+
+
+#job-view-container{
+    margin-top: 50px;
+    background-color: beige;
+}
+
+#img-container-detalhe{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-container-detalhe img {
+    width: 150px;
+    border: 1px solid rgb(22, 22, 95);
+    border-radius: 50%;
+
+}
+
+.job-desc{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-link {
+    border: 1px solid rgb(32, 32, 77);
+    padding: 5px 10px;
+    transition: .5s;
+    width: 50px;
+}
+.main-color{
+    color: rgb(22, 22, 95);
+}
